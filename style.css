@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --strongcyan: hsl(172, 67%, 45%);
+    --verydarkcyan: hsl(183, 100%, 15%);
+    --darkgrayishcyan: hsl(186, 14%, 43%);
+    --grayishcyan: hsl(184, 14%, 56%);
+    --lightgrayishcyan: hsl(185, 41%, 84%);
+    --verylightgrayishcyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--lightgrayishcyan)
+}
+
+.calc {
+    background-color: white;
+    border-radius: 20px;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    place-content: center;
+    font-family: 'Space Mono', monospace;
+    color: var(--darkgrayishcyan);
+    font-size: 17px;
+}
+
+button {
+    font-family: 'Space Mono', monospace;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container {
+    min-width: 80%;
+}
+
+.calc {
+    padding: 30px;
+   
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.pad {
+    padding-bottom: 30px;
+}
+
+.num {
+    background-color: var(--verydarkcyan);
+    color: white;
+}
+
+.perc {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+input {
+    margin-bottom: 30px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    background-color: var(--lightgrayishcyan);
+}
+
+.result {
+    background-color: var(--verydarkcyan);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset {
+    width: 100%;
+    background-color: var(--strongcyan);
+}
+
+.money {
+    padding: 10px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <div class="container">
+
+      <!-- logoo -->
+      <div class="logo">
+        <img src="images/logo.svg" alt="">
+      </div>
+
+      <div class="calc">
+        <p class="pad" >Bill</p>
+        <input type="text" class="money" placeholder="Enter Number">
+        <p class="pad" >Select Tip %</p>
+
+        <!-- the grid -->
+        <div class="perc pad">
+          <button class="num" >5%</button>
+          <button class="num" >10%</button>
+          <button class="num" >15%</button>
+          <button class="num" >25%</button>
+          <button class="num" >50%</button>
+          <button class="num" >Custom</button>
+        </div>
+
+        <p class="pad" >Number of People</p>
+        <input type="text" class="people">
+
+        <!-- this part will display the result -->
+        <div class="result">
+          <div class="wrap pad">
+            <p>Tip Amount <br> / person</p>
+            <p class="tip">display tip</p>
+          </div>
+
+          <div class="wrap pad">
+            <p>Total <br> / person</p>
+            <p class="total">display total</p>
+          </div>
+
+          <button class="reset" >RESET</button>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
